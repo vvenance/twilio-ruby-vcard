@@ -1,7 +1,7 @@
 require "twilio-ruby"
 
-account_sid = '<your account sid>'
-auth_token = '<your auth token>'
+account_sid = ENV["ACCOUNT_SID"]
+auth_token = ENV["AUTH_TOKEN"]
 
 # create Twilio client
 @client = Twilio::REST::Client.new(account_sid, auth_token)
